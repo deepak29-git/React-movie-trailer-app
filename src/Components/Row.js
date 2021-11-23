@@ -51,9 +51,6 @@ function Row({fetchUrl,title,isLargerRow}){
             <div className="row_container">
             {
                 movies.map(movie=>{
-                    
-                  
-                        
                       return  <img onClick={()=>clickHandler(movie)} className={`row_poster ${isLargerRow && `row_poster_larger`}` } key={movie.id} src={`${baseUrl}${isLargerRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name} />
                       
                     
