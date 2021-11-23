@@ -11,13 +11,12 @@ function App() {
       <Navbar/>
       <Baner/>
       <Row title="Top Trending" fetchUrl={requests.fetchTrending} isLargerRow/>
-
-      <Row title="Action Movies" fetchUrl={requests.fetchAction}/>
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedy}/>
-      <Row title="Crime Movies" fetchUrl={requests.fetchCrime}/>
-      <Row title="Horror Movies" fetchUrl={requests.fetchHorror}/>
-      <Row title="Romance Movies" fetchUrl={requests.fetchRomance}/>
       <Row title="Kid Movies" fetchUrl={requests.fetchKidMovies}/>
+      <Row title="Drama Movies" fetchUrl={requests.fetchDrama}/>
+      <Row title="Popular Movies" fetchUrl={requests.fetchPopular}/>
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedy}/>
+      <Row title="Theatres Movies" fetchUrl={requests.fetchTheatres}/>
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
     </div>
   );
 }
