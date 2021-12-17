@@ -23,10 +23,8 @@ function Baner(){
     
     function playHandler(movie){
             movieTrailer(movie?.name || movie?.title || movie?.original_title)
-            .then(url=>{
-                console.log(url)
+            .then(url=>{       
                 const getVideoId=url.split("").slice(32).join("")
-                console.log(getVideoId)
                 setTrailerUrl(getVideoId)
             }).catch(error=>{
                 alert(error)
